@@ -1,0 +1,11 @@
+/root/pihole/logs-pihole/*.log {
+    su root root
+    daily
+    size 50M
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    notifempty
+    copytruncate
+}
